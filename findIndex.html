@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>findIndex</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        const sports = ['cricket', 'baseball', 'golf', 'basketball', 'runningrace'];
+        let count = 0;
+        const out = sports.findIndex(name => {
+            if(name.includes('b')){
+                if(count === 0){
+                    ++count;
+                    return false;
+                }
+                return true;
+            }
+        });
+        console.log(out);
+    </script>
+</body>
+
+</html>
